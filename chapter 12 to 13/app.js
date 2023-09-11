@@ -1,5 +1,15 @@
-// question 02
+// question 01
+var question1 = +prompt ("write a number.")
+if ((question1 >= 65) && (question1 <= 90)) {
+    document.write("<h4>uppercase</h4>")
+} else if ((question1 >= 90) && (question1 <= 122)) {
+    document.write("<h4>lowercase</h4>")
+} else {
+    document.write("<h4>it is a string</h4>")
 
+}
+
+// question 02
 let num1 = 10
 let num2 = 25
 
@@ -41,7 +51,7 @@ if (userPassword.toLowerCase == "") {
 }
 
 // question 06
-var greeting;
+var greeting = ""
 var hour = 13;
 if (hour < 18) {
   var greeting = "Good day";
