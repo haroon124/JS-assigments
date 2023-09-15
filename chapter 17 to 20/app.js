@@ -84,17 +84,40 @@
 // let bakery = ["cake","apple pie","cookie","chips","patties"]
 // let whatYouWant = prompt("what you want?")
 // foodFound = false;
-// let itemIndex;
-
-// for(var i = 0; i < bakery.length; i++) {
-//     if (whatYouWant.toLowerCase === bakery[i]) {
-//         foodFound = true
-//         itemIndex = i;
-// }
-//     if (!foodFound) {
-//         alert(whatYouWant + " is avalible at index " + itemIndex + " in our bakery.")
-//     } else {
-//         alert("sorry jani " + whatYouWant + " avalible nahi hai.")
+// var itemIndex;
+// function foodFoundAlert() {
+//     if (foodFound == true) {
+//        alert(whatYouWant + " is avalible at index " + itemIndex + " in our bakery. ")
 //     }
 // }
 
+// for(var i = 0; i < bakery.length; i++) {
+//     if (whatYouWant == bakery[i]) {
+//         foodFound = true
+//         itemIndex = i;
+//         foodFoundAlert()
+//     }
+
+// }
+// if (!foodFound) {
+//     alert("sorry jani " + whatYouWant + " avalible nahi hai.")
+// }
+
+// // quetion 08
+// let Num = [24, 53, 78, 91, 12];
+// let maximum = Math.max(...Num)
+// document.write("the maximum vale in array is " + maximum + "<hr>");
+
+
+
+// // quetion 09
+// let minNum = [24, 53, 78, 91, 12];
+// let minimum = Math.min(...Num)
+// document.write("the minimum vale in array is " + minimum + "<hr>");
+
+// question 10
+// var multipal = 100
+
+// for(var i = 5; i <= multipal; i + 5) {
+//     console.log(i);
+// }
