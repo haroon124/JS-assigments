@@ -129,9 +129,9 @@
 // } 
 
 
-// question 15
+// // question 15
 
-// let password = prompt("write a password.")
+// let password = prompt("write a password.")  
 // let corect_password_number = false
 // let corect_password_string = false
 // let password_length = false
@@ -139,24 +139,78 @@
 // if (password.length < 6) {
 //     password_length = true;
 //     alert("at least 6 charactar is needed.")
-// } 
+// } else {
+//     password_length = false
+// }
+
 // for (let i = 0; i < password.length; i++) {
-//     if (!isNaN(password[i])) {
+//     if (isNaN(password[i])) {
 //         corect_password_number = true;
 //         break;
-//     } 
-//     if (typeof password[i] !== "string") {
+//     } else if (!isNaN(password[i])) {
 //         corect_password_string = true;
 //         break;
-//     } 
+//     } else {
+//         corect_password_string = false;
+//         corect_password_number = false;
+//     }
 // }
 
 
 
-//  if (!corect_password_number) {
+// if (corect_password_number) {
 //     alert("Write a number in your password.");
-// } else if (!corect_password_string) {
+// } else {
+//     corect_password_number = false;
+// }
+
+// if (corect_password_string) {
 //     alert("Write an alphabet in your password.");
 // } else {
+//     corect_password_string = false;
+// }
+
+// if (corect_password_string === false && corect_password_number === false) {
 //     alert("Correct");
 // }
+
+
+// // question 16
+
+// let sentence = "University of Karachi"
+// let word = sentence.split(" ")
+// console.log(sentence);
+// console.log(word);
+
+
+// // question 17
+
+// let lastChar = "pakistan"
+// let last = lastChar.charAt(lastChar.length - 1)
+// console.log(last)
+
+
+// question 18
+
+let sentence = "The quick brown fox jumps over the lazy dog".toLowerCase()
+let lower_case = sentence.toLowerCase()
+let word = "the"
+let count = 0
+
+let lower_case_split = lower_case.split(" ") 
+
+for (i = 0 ; i < lower_case_split.length ; i++) {
+    if (lower_case_split[i] == word) {
+        count++
+    }
+}
+console.log("word 'the' is " + count + " times in a sentence." )
+
+
+
+
+
+
+
+
+
