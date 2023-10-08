@@ -1,0 +1,50 @@
+body {
+    text-align: center;
+    font-family: Arial, sans-serif;
+    margin-top: 100px;
+}
+h1 {
+    color: white;
+    background-color: rgb(165, 165, 165);
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 15px;
+    border-radius: 15px;
+}
+#dice {
+    font-size: 3em;
+    margin: 20px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 25px;
+    padding-right: 25px;
+    display: inline-block;
+    background-color: aqua;
+    border-radius: 20px;
+}
+button {
+    color: white;
+    background-color: rgb(165, 165, 165);
+    padding: 12px;
+    border-radius: 10px;
+    border: none;
+}
+button:hover {
+    transform: scale(1.2);
+    transition: 400ms;
+    border-radius: 5px 3rem 5px 3rem;
+    border: none;
+}
+
+#toss {
+    font-size: 3em;
+    margin: 20px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 25px;
+    padding-right: 25px;
+    display: inline-block;
+    background-color: aqua;
+    border-radius: 20px;
+}
