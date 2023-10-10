@@ -93,7 +93,6 @@
 // question 09 
 
 
-
 // function calculateAreaOfTriangle(width,height) {
 //     area_of_a_rectangle = width * height
 //     return area_of_a_rectangle;
@@ -105,4 +104,51 @@
 // console.log(calculateAreaOfTriangle(width,height));
 
 
+// question 11
 
+// function capitalizeEachWord(input) {
+//     const words = input.split(' ');
+
+//     const capitalizedWords = words.map(word => word.charAt(0).toUpperCase() + word.slice(1).toLowerCase());
+
+//     const resultString = capitalizedWords.join(" ");
+
+//     return resultString;
+// }
+
+// const input = prompt("write a text");
+// const outputString = capitalizeEachWord(input);
+// console.log(outputString);
+
+
+// question 12
+
+// function calcCircumference(radius) {
+//     if (typeof radius !== 'number' || isNaN(radius) || radius <= 0) {
+//         return "Invalid radius. Please provide a positive numeric value.";
+//     }
+
+//     // Calculate the circumference using the formula C = 2 * π * r
+//     const circumference = 2 * Math.PI * radius;
+
+//     return `The circumference is ${circumference.toFixed(2)}`;
+// }
+
+// const radius = +prompt("write a radius.");
+// const result = calcCircumference(radius);
+// console.log(result);
+
+function calcArea(radius) {
+    if (typeof radius !== 'number' || isNaN(radius) || radius <= 0) {
+        return "Invalid radius. Please provide a positive numeric value.";
+    }
+
+    // Calculate the area using the formula A = π * r^2
+    const area = Math.PI * Math.pow(radius, 2);
+
+    return `The area is ${area.toFixed(2)}`;
+}
+
+const radius = 5;
+const result = calcArea(radius);
+console.log(result);
