@@ -90,7 +90,7 @@
 // let userName = prompt("write a name.")
 // let user = false
 
-// for (i = 0; i < userName.length - 1; i++ ) {
+// for (i = 0; i < userName.length; i++ ) {
 //     if (userName[i] ===  "@" || userName[i] === "." || userName[i] === "," || userName[i] === "!") {
 //         user = true
 //         break;
@@ -104,7 +104,7 @@
 //     alert("enter a valid username.")
 // }
 
-// // question 14
+// question 14
 
 // let bakery = [
 //     "cookie",
@@ -132,6 +132,7 @@
 // // question 15
 
 // let password = prompt("write a password.")  
+// let passwordConvert = password.split(' ')
 // let corect_password_number = false
 // let corect_password_string = false
 // let password_length = false
@@ -143,11 +144,11 @@
 //     password_length = false
 // }
 
-// for (let i = 0; i < password.length; i++) {
-//     if (isNaN(password[i])) {
+// for (let i = 0; i < passwordConvert.length; i++) {
+//     if (isNaN(passwordConvert[i])) {
 //         corect_password_number = true;
 //         break;
-//     } else if (!isNaN(password[i])) {
+//     } else if (!isNaN(passwordConvert[i])) {
 //         corect_password_string = true;
 //         break;
 //     } else {
@@ -158,21 +159,21 @@
 
 
 
-// if (corect_password_number) {
-//     alert("Write a number in your password.");
-// } else {
-//     corect_password_number = false;
-// }
+if (corect_password_number) {
+    alert("Write a number in your password.");
+} else {
+    corect_password_number = false;
+}
 
-// if (corect_password_string) {
-//     alert("Write an alphabet in your password.");
-// } else {
-//     corect_password_string = false;
-// }
+if (corect_password_string) {
+    alert("Write an alphabet in your password.");
+} else {
+    corect_password_string = false;
+}
 
-// if (corect_password_string === false && corect_password_number === false) {
-//     alert("Correct");
-// }
+if (corect_password_string === false && corect_password_number === false) {
+    alert("Correct");
+}
 
 
 // // question 16
@@ -192,19 +193,19 @@
 
 // question 18
 
-let sentence = "The quick brown fox jumps over the lazy dog".toLowerCase()
-let lower_case = sentence.toLowerCase()
-let word = "the"
-let count = 0
+// let sentence = "The quick brown fox jumps over the lazy dog".toLowerCase()
+// let lower_case = sentence.toLowerCase()
+// let word = "the"
+// let count = 0
 
-let lower_case_split = lower_case.split(" ") 
+// let lower_case_split = lower_case.split(" ") 
 
-for (i = 0 ; i < lower_case_split.length ; i++) {
-    if (lower_case_split[i] == word) {
-        count++
-    }
-}
-console.log("word 'the' is " + count + " times in a sentence." )
+// for (i = 0 ; i < lower_case_split.length ; i++) {
+//     if (lower_case_split[i] == word) {
+//         count++
+//     }
+// }
+// console.log("word 'the' is " + count + " times in a sentence." )
 
 
 
